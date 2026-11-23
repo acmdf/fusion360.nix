@@ -2,7 +2,7 @@
 
 # Compatibility changes apply only to this package's Wine, not the system Wine.
 # Each patch records its source; live validation is documented in the README.
-wineWow64Packages.stagingFull.overrideAttrs (old: {
+wineWow64Packages.full.overrideAttrs (old: {
   patches = (old.patches or [ ]) ++ [
     # Preserve ordinary RSA; handle Fusion's legacy public exponent 1.
     ./symcrypt-rsa-exponent1.patch
